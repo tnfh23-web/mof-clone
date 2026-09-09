@@ -1,0 +1,24 @@
+# Local tools and temporary files
+.vscode/
+.idea/
+.codex/
+.agents/
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+Desktop.ini
+open-code.bat
+
+# Local credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key

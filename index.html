@@ -1,0 +1,1669 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>해양수산부</title>
+    <!-- 폰트: 도메인이 아닌 실제 CSS 파일을 연결하고 필요한 글자만 내려받습니다. -->
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-gov-dynamic-subset.min.css" />
+    <!-- 스와이퍼 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- 스타일 css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/variable.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/additions.css" />
+    <link rel="stylesheet" href="./css/quick-menu.css" />
+    <link rel="stylesheet" href="./css/sitemap.css" />
+  </head>
+
+  <body>
+    <div class="left-popup">
+      <div class="popup-con">
+        <div class="popup-head flex-cen gap-6">
+          <label class="flex gap-14">
+            <input type="checkbox" name="clo" />
+            <a href="#"><span>오늘 하루 열지 않기</span></a>
+          </label>
+          <button type="button" class="close-btn flex-cen fs-18">닫기</button>
+        </div>
+        <div class="popup-body">
+          <a href="#"><img decoding="async" src="img/pop/left_pop.png" alt="팝업 이미지" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="right-popup">
+      <div class="popup-con">
+        <p>Quick Menu</p>
+        <a href="#"><img decoding="async" src="img/pop/right_pop_1.png" alt="팝업 이미지" /></a>
+        <a href="#"><img decoding="async" src="img/pop/right_pop_2.png" alt="팝업 이미지" /></a>
+        <a href="#"><img decoding="async" src="img/pop/right_pop_3.png" alt="팝업 이미지" /></a>
+        <a href="#"><img decoding="async" src="img/pop/right_pop_4.jpg" alt="팝업 이미지" /></a>
+        <a href="#"><img decoding="async" src="img/pop/right_pop_5.jpg" alt="팝업 이미지" /></a>
+        <a href="#"><img decoding="async" src="img/pop/right_pop_6.jpg" alt="팝업 이미지" /></a>
+        <label class="flex">
+          <input type="checkbox" name="clo" />
+          <a href="#"><span>오늘 열지 않기</span></a>
+        </label>
+        <div class="button-box flex-cen">
+          <button type="button" class="close-btn flex-cen fs-18">닫기</button>
+        </div>
+      </div>
+    </div>
+    <!-- 추가 헤더: https://www.mof.go.kr/index.do 참고 -->
+    <a class="mof-skip-link" href="#">본문 바로가기</a>
+    <header class="mof-header">
+      <div class="mof-government-bar">
+        <div class="mof-header-inner">
+          <img class="mof-flag" src="img/header/flag.svg" alt="태극기" width="23" height="20" />
+          <span>이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
+        </div>
+      </div>
+      <div class="mof-header-inner">
+        <div class="mof-utility">
+          <a class="mof-national-symbol" href="#"><img class="mof-flag" src="img/header/flag.svg" alt="" />국가상징 알아보기 <span class="mof-external-icon" aria-hidden="true"></span></a>
+          <span class="mof-utility-divider" aria-hidden="true"></span>
+          <div class="mof-zoom">
+            <button type="button" class="mof-zoom-trigger" aria-expanded="false" aria-controls="mof-zoom-menu">화면 크기 <span class="mof-chevron" aria-hidden="true"></span></button>
+            <div class="mof-zoom-menu" id="mof-zoom-menu" hidden>
+              <button type="button" data-zoom="0.8" aria-pressed="false">작게</button>
+              <button type="button" data-zoom="1" aria-pressed="true">보통</button>
+              <button type="button" data-zoom="1.1" aria-pressed="false">조금크게</button>
+              <button type="button" data-zoom="1.2" aria-pressed="false">크게</button>
+              <button type="button" data-zoom="1.3" aria-pressed="false">가장크게</button>
+              <button type="button" class="mof-zoom-reset"><span class="mof-reset-icon" aria-hidden="true"></span>초기화</button>
+            </div>
+          </div>
+          <span class="mof-utility-divider" aria-hidden="true"></span>
+          <a href="#">ENGLISH <span class="mof-external-icon" aria-hidden="true"></span></a>
+          <div class="mof-certifications">
+            <a class="mof-certification" href="#"><img src="img/header/web-accessibility.png" alt="웹 접근성 품질인증 마크" width="45" height="32" /></a>
+            <a class="mof-certification" href="#"><img src="img/header/eprivacy.png" alt="ePrivacy Plus 마크" width="31" height="31" /></a>
+          </div>
+        </div>
+        <div class="mof-branding">
+          <h1 class="mof-logo">
+            <a href="#" aria-label="해양수산부 처음으로"><img src="img/header/logo.svg" alt="해양수산부" width="180" height="51" /></a>
+          </h1>
+          <div class="mof-header-actions">
+            <form class="mof-search" role="search" action="#">
+              <label class="mof-sr-only" for="mof-search-input">통합검색 검색어</label>
+              <input type="search" id="mof-search-input" name="surfWord" placeholder="검색어를 입력하세요." autocomplete="off" required />
+              <button type="submit"><span class="mof-search-icon" aria-hidden="true"></span>통합검색</button>
+            </form>
+            <button type="button" class="mof-sitemap-open" aria-haspopup="dialog" aria-controls="mof-sitemap" aria-expanded="false">
+              <span class="mof-grid-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></span>전체메뉴
+            </button>
+          </div>
+        </div>
+      </div>
+      <nav class="mof-navigation" aria-label="주메뉴">
+        <div class="mof-header-inner">
+          <ul class="mof-nav-list">
+            <li>
+              <button type="button" class="mof-nav-trigger" aria-expanded="false" aria-controls="mof-menu-0">정보공개<span class="mof-chevron" aria-hidden="true"></span></button>
+              <div class="mof-mega-menu" id="mof-menu-0" hidden>
+                <div class="mof-header-inner mof-mega-inner">
+                  <div class="mof-menu-categories" role="tablist" aria-label="정보공개 하위 메뉴" aria-orientation="vertical">
+                    <button type="button" class="mof-category-button" role="tab" id="mof-category-0-0" aria-controls="mof-group-0-0" aria-selected="true" tabindex="0">정보공개제도 안내</button>
+                    <button type="button" class="mof-category-button" role="tab" id="mof-category-0-1" aria-controls="mof-group-0-1" aria-selected="false" tabindex="-1">사전정보공표</button>
+                    <button type="button" class="mof-category-button" role="tab" id="mof-category-0-2" aria-controls="mof-group-0-2" aria-selected="false" tabindex="-1">정보목록</button>
+                    <button type="button" class="mof-category-button" role="tab" id="mof-category-0-3" aria-controls="mof-group-0-3" aria-selected="false" tabindex="-1">정보공개청구</button>
+                    <button type="button" class="mof-category-button" role="tab" id="mof-category-0-4" aria-controls="mof-group-0-4" aria-selected="false" tabindex="-1">공공데이터 개방</button>
+                    <button type="button" class="mof-category-button" role="tab" id="mof-category-0-5" aria-controls="mof-group-0-5" aria-selected="false" tabindex="-1">정책실명제</button>
+                  </div>
+                  <div class="mof-menu-content">
+                    <section class="mof-menu-group" id="mof-group-0-0" role="tabpanel" aria-labelledby="mof-category-0-0" data-title="정보공개제도 안내">
+                      <h2>정보공개제도 안내 <a href="#">이동하기 ›</a></h2>
+                      <ul>
+                        <li><a href="#">정보공개제도 안내</a></li>
+                        <li><a href="#">비공개 대상정보 세부기준</a></li>
+                      </ul>
+                    </section>
+                    <section class="mof-menu-group" id="mof-group-0-1" role="tabpanel" aria-labelledby="mof-category-0-1" data-title="사전정보공표" hidden>
+                      <h2>사전정보공표 <a href="#">이동하기 ›</a></h2>
+                      <ul>
+                        <li><a href="#">사전정보공표목록</a></li>
+                        <li><a href="#">부서별 사전공표정보</a></li>
+                        <li><a href="#">재정정보</a></li>
+                        <li><a href="#">국고보조금 정보</a></li>
+                        <li><a href="#">감사계획 및 결과</a></li>
+                        <li><a href="#">협동조합 경영공시</a></li>
+                      </ul>
+                    </section>
+                    <section class="mof-menu-group" id="mof-group-0-2" role="tabpanel" aria-labelledby="mof-category-0-2" data-title="정보목록" hidden>
+                      <h2>정보목록 <a href="#">이동하기 ›</a></h2>
+                      <ul>
+                        <li><a href="#">정보목록</a></li>
+                      </ul>
+                    </section>
+                    <section class="mof-menu-group" id="mof-group-0-3" role="tabpanel" aria-labelledby="mof-category-0-3" data-title="정보공개청구" hidden>
+                      <h2>정보공개청구 <a href="#">이동하기 ›</a></h2>
+                      <ul></ul>
+                    </section>
+                    <section class="mof-menu-group" id="mof-group-0-4" role="tabpanel" aria-labelledby="mof-category-0-4" data-title="공공데이터 개방" hidden>
+                      <h2>공공데이터 개방 <a href="#">이동하기 ›</a></h2>
+                      <ul>
+                        <li><a href="#">공공데이터 개념</a></li>
+                        <li><a href="#">개방현황 및 활용모델</a></li>
+                      </ul>
+                    </section>
+                    <section class="mof-menu-group" id="mof-group-0-5" role="tabpanel" aria-labelledby="mof-category-0-5" data-title="정책실명제" hidden>
+                      <h2>정책실명제 <a href="#">이동하기 ›</a></h2>
+                      <ul>
+                        <li><a href="#">중점관리 대상사업</a></li>
+                        <li><a href="#">국민신청실명제</a></li>
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <button type="button" class="mof-nav-trigger" aria-expanded="false" aria-controls="mof-menu-1">민원·참여<span class="mof-chevron" aria-hidden="true"></span></button>
+              <div class="mof-mega-menu" id="mof-menu-1" hidden>
+                <div class="mof-header-inner mof-mega-inner">
+                  <div class="mof-menu-categories" role="tablist" aria-label="민원·참여 하위 메뉴" aria-orientation="vertical">
+                    <button type="button" class="mof-category-button" role="tab" id="mof-category-1-0" aria-controls="mof-group-1-0" aria-selected="true" tabindex="0">국민참여</button>
+                    <button type="button" class="mof-category-button" role="tab" id="mof-category-1-1" aria-controls="mof-group-1-1" aria-selected="false" tabindex="-1">규제개혁</button>
+                    <button type="button" class="mof-category-button" role="tab" id="mof-category-1-2" aria-controls="mof-group-1-2" aria-selected="false" tabindex="-1">신고센터</button>
+                    <button type="button" class="mof-category-button" role="tab" id="mof-category-1-3" aria-controls="mof-group-1-3" aria-selected="false" tabindex="-1">전자민원</button>
+                    <button type="button" class="mof-category-button" role="tab" id="mof-category-1-4" aria-controls="mof-group-1-4" aria-selected="false" tabindex="-1">적극행정</button>
+                  </div>
+                  <div class="mof-menu-content">
+                    <section class="mof-menu-group" id="mof-group-1-0" role="tabpanel" aria-labelledby="mof-category-1-0" data-title="국민참여">
+                      <h2>국민참여 <a href="#">이동하기 ›</a></h2>
+                      <ul>
+                        <li><a href="#">정책토론</a></li>
+                        <li><a href="#">전자공청회</a></li>
+                        <li><a href="#">설문조사</a></li>
+                        <li><a href="#">국민정책제안</a></li>
+                        <li><a href="#">국민생각함</a></li>
+                        <li><a href="#">110수화(화상)/채팅 상담</a></li>
+                        <li><a href="#">해양·수산물 방사능 안전, 무엇이든 물어보세요</a></li>
+                      </ul>
+                    </section>
+                    <section class="mof-menu-group" id="mof-group-1-1" role="tabpanel" aria-labelledby="mof-category-1-1" data-title="규제개혁" hidden>
+                      <h2>규제개혁 <a href="#">이동하기 ›</a></h2>
+                      <ul>
+                        <li><a href="#">규제개혁이란?</a></li>
+                        <li><a href="#">심사중인규제법안</a></li>
+                        <li><a href="#">규제개혁 보도자료</a></li>
+                        <li><a href="#">규제법령정보</a></li>
+                        <li><a href="#">규제개혁홍보자료</a></li>
+                        <li><a href="#">규제개혁제안</a></li>
+                        <li><a href="#">규제입증요청</a></li>
+                      </ul>
+                    </section>
+                    <section class="mof-menu-group" id="mof-group-1-2" role="tabpanel" aria-labelledby="mof-category-1-2" data-title="신고센터" hidden>
+                      <h2>신고센터 <a href="#">이동하기 ›</a></h2>
+                      <ul>
+                        <li><a href="#">공직자 부조리신고</a></li>
+                        <li><a href="#">보조금 부조리 신고센터</a></li>
+                        <li><a href="#">청탁금지법 위반신고</a></li>
+                        <li><a href="#">감사정보청구</a></li>
+                        <li><a href="#">예산낭비신고센터</a></li>
+                        <li><a href="#">예산절감제안</a></li>
+                        <li><a href="#">나의신고보기</a></li>
+                        <li><a href="#">어업용면세유류부정유출</a></li>
+                        <li><a href="#">공익신고</a></li>
+                        <li><a href="#">채용비리신고</a></li>
+                        <li><a href="#">안전신문고</a></li>
+                        <li><a href="#">성희롱·성폭력피해신고</a></li>
+                        <li><a href="#">갑질피해신고</a></li>
+                        <li><a href="#">신고포상금 제도 안내</a></li>
+                        <li><a href="#">공공재정환수법 위반신고</a></li>
+                        <li><a href="#">선박결함신고</a></li>
+                        <li><a href="#">정상화 과제 발굴을 위한 국민제안센터</a></li>
+                      </ul>
+                    </section>
+                    <section class="mof-menu-group" id="mof-group-1-3" role="tabpanel" aria-labelledby="mof-category-1-3" data-title="전자민원" hidden>
+                      <h2>전자민원 <a href="#">이동하기 ›</a></h2>
+                      <ul>
+                        <li><a href="#">민원신청</a></li>
+                        <li><a href="#">유사민원조회</a></li>
+                        <li><a href="#">나의민원</a></li>
+                        <li><a href="#">법정민원 서식</a></li>
+                        <li><a href="#">국민신청 수산물 방사능 검사</a></li>
+                      </ul>
+                    </section>
+                    <section class="mof-menu-group" id="mof-group-1-4" role="tabpanel" aria-labelledby="mof-category-1-4" data-title="적극행정" hidden>
+                      <h2>적극행정 <a href="#">이동하기 ›</a></h2>
+                      <ul>
+                        <li><a href="#">적극행정 소개</a></li>
+                        <li><a href="#">카드뉴스/웹툰/영상</a></li>
+                        <li><a href="#">알림/소식</a></li>
+                        <li><a href="#">공무원·정책 국민추천</a></li>
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <button type="button" class="mof-nav-trigger" aria-expanded="false" aria-controls="mof-menu-2">알림·뉴스<span class="mof-chevron" aria-hidden="true"></span></button>
+              <div class="mof-mega-menu" id="mof-menu-2" hidden>
+                <div class="mof-header-inner mof-mega-inner">
+                  <div class="mof-menu-categories" role="tablist" aria-label="알림·뉴스 하위 메뉴" aria-orientation="vertical">
+                    <button type="button" class="mof-category-button" role="tab" id="mof-category-2-0" aria-controls="mof-group-2-0" aria-selected="true" tabindex="0">알림</button>
+                    <button type="button" class="mof-category-button" role="tab" id="mof-category-2-1" aria-controls="mof-group-2-1" aria-selected="false" tabindex="-1">뉴스</button>
+                    <button type="button" class="mof-category-button" role="tab" id="mof-category-2-2" aria-controls="mof-group-2-2" aria-selected="false" tabindex="-1">일자리 정보</button>
+                    <button type="button" class="mof-category-button" role="tab" id="mof-category-2-3" aria-controls="mof-group-2-3" aria-selected="false" tabindex="-1">해양수산물방사능 정보</button>
+                  </div>
+                  <div class="mof-menu-content">
+                    <section class="mof-menu-group" id="mof-group-2-0" role="tabpanel" aria-labelledby="mof-category-2-0" data-title="알림">
+                      <h2>알림 <a href="#">이동하기 ›</a></h2>
+                      <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">입찰</a></li>
+                        <li><a href="#">인사</a></li>
+                        <li><a href="#">채용·공모</a></li>
+                        <li><a href="#">이벤트 및 공모전</a></li>
+                        <li><a href="#">중동 관련 선원 비상 상담소통방</a></li>
+                      </ul>
+                    </section>
+                    <section class="mof-menu-group" id="mof-group-2-1" role="tabpanel" aria-labelledby="mof-category-2-1" data-title="뉴스" hidden>
+                      <h2>뉴스 <a href="#">이동하기 ›</a></h2>
+                      <ul>
+                        <li><a href="#">보도자료</a></li>
+                        <li><a href="#">설명자료</a></li>
+                        <li><a href="#">사진뉴스</a></li>
+                        <li><a href="#">동영상뉴스</a></li>
+                        <li><a href="#">카드뉴스</a></li>
+                        <li><a href="#">해수욕장(방사능)</a></li>
+                      </ul>
+                    </section>
+                    <section class="mof-menu-group" id="mof-group-2-2" role="tabpanel" aria-labelledby="mof-category-2-2" data-title="일자리 정보" hidden>
+                      <h2>일자리 정보 <a href="#">이동하기 ›</a></h2>
+                      <ul>
+                        <li><a href="#">일자리검색</a></li>
+                        <li><a href="#">유관기관 채용정보</a></li>
+                        <li><a href="#">자격증</a></li>
+                        <li><a href="#">전문인력양성</a></li>
+                        <li><a href="#">이색직업소개</a></li>
+                        <li><a href="#">직업정보검색</a></li>
+                      </ul>
+                    </section>
+                    <section class="mof-menu-group" id="mof-group-2-3" role="tabpanel" aria-labelledby="mof-category-2-3" data-title="해양수산물방사능 정보" hidden>
+                      <h2>해양수산물방사능 정보 <a href="#">이동하기 ›</a></h2>
+                      <ul>
+                        <li><a href="#">해양·수산물방사능안전정보</a></li>
+                        <li><a href="#">해양방사능 정보</a></li>
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <button type="button" class="mof-nav-trigger" aria-expanded="false" aria-controls="mof-menu-3">정책자료<span class="mof-chevron" aria-hidden="true"></span></button>
+              <div class="mof-mega-menu" id="mof-menu-3" hidden>
+                <div class="mof-header-inner mof-mega-inner">
+                  <div class="mof-menu-categories" role="tablist" aria-label="정책자료 하위 메뉴" aria-orientation="vertical">
+                    <button type="button" class="mof-category-button" role="tab" id="mof-category-3-0" aria-controls="mof-group-3-0" aria-selected="true" tabindex="0">업무계획</button>
+                    <button type="button" class="mof-category-button" role="tab" id="mof-category-3-1" aria-controls="mof-group-3-1" aria-selected="false" tabindex="-1">정책정보</button>
+                    <button type="button" class="mof-category-button" role="tab" id="mof-category-3-2" aria-controls="mof-group-3-2" aria-selected="false" tabindex="-1">법령정보</button>
+                    <button type="button" class="mof-category-button" role="tab" id="mof-category-3-3" aria-controls="mof-group-3-3" aria-selected="false" tabindex="-1">통계정보</button>
+                  </div>
+                  <div class="mof-menu-content">
+                    <section class="mof-menu-group" id="mof-group-3-0" role="tabpanel" aria-labelledby="mof-category-3-0" data-title="업무계획">
+                      <h2>업무계획 <a href="#">이동하기 ›</a></h2>
+                      <ul>
+                        <li><a href="#">연도별 업무계획</a></li>
+                        <li><a href="#">2026년 업무계획</a></li>
+                        <li><a href="#">주요정책 발표</a></li>
+                        <li><a href="#">법정 계획</a></li>
+                      </ul>
+                    </section>
+                    <section class="mof-menu-group" id="mof-group-3-1" role="tabpanel" aria-labelledby="mof-category-3-1" data-title="정책정보" hidden>
+                      <h2>정책정보 <a href="#">이동하기 ›</a></h2>
+                      <ul>
+                        <li><a href="#">정책게시판</a></li>
+                        <li><a href="#">국제해사동향</a></li>
+                        <li><a href="#">간행물</a></li>
+                        <li><a href="#">용어사전</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li><a href="#">해양수산 정책 성과</a></li>
+                      </ul>
+                    </section>
+                    <section class="mof-menu-group" id="mof-group-3-2" role="tabpanel" aria-labelledby="mof-category-3-2" data-title="법령정보" hidden>
+                      <h2>법령정보 <a href="#">이동하기 ›</a></h2>
+                      <ul>
+                        <li><a href="#">법령</a></li>
+                        <li><a href="#">훈령/예규/고시/공고</a></li>
+                        <li><a href="#">입법예고</a></li>
+                        <li><a href="#">행정예고</a></li>
+                      </ul>
+                    </section>
+                    <section class="mof-menu-group" id="mof-group-3-3" role="tabpanel" aria-labelledby="mof-category-3-3" data-title="통계정보" hidden>
+                      <h2>통계정보 <a href="#">이동하기 ›</a></h2>
+                      <ul>
+                        <li><a href="#">통계정보조회</a></li>
+                        <li><a href="#">통계공표일정</a></li>
+                        <li><a href="#">통계연보</a></li>
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <button type="button" class="mof-nav-trigger" aria-expanded="false" aria-controls="mof-menu-4">기관소개<span class="mof-chevron" aria-hidden="true"></span></button>
+              <div class="mof-mega-menu" id="mof-menu-4" hidden>
+                <div class="mof-header-inner mof-mega-inner">
+                  <div class="mof-menu-categories" role="tablist" aria-label="기관소개 하위 메뉴" aria-orientation="vertical">
+                    <button type="button" class="mof-category-button" role="tab" id="mof-category-4-0" aria-controls="mof-group-4-0" aria-selected="true" tabindex="0">기관현황</button>
+                    <button type="button" class="mof-category-button" role="tab" id="mof-category-4-1" aria-controls="mof-group-4-1" aria-selected="false" tabindex="-1">조직 및 직원안내</button>
+                    <button type="button" class="mof-category-button" role="tab" id="mof-category-4-2" aria-controls="mof-group-4-2" aria-selected="false" tabindex="-1">장관, 차관 안내</button>
+                    <button type="button" class="mof-category-button" role="tab" id="mof-category-4-3" aria-controls="mof-group-4-3" aria-selected="false" tabindex="-1">찾아오시는길</button>
+                  </div>
+                  <div class="mof-menu-content">
+                    <section class="mof-menu-group" id="mof-group-4-0" role="tabpanel" aria-labelledby="mof-category-4-0" data-title="기관현황">
+                      <h2>기관현황 <a href="#">이동하기 ›</a></h2>
+                      <ul>
+                        <li><a href="#">비전 및 목표</a></li>
+                        <li><a href="#">설립목적 및 연혁</a></li>
+                        <li><a href="#">MI · 배너</a></li>
+                        <li><a href="#">관할해역</a></li>
+                      </ul>
+                    </section>
+                    <section class="mof-menu-group" id="mof-group-4-1" role="tabpanel" aria-labelledby="mof-category-4-1" data-title="조직 및 직원안내" hidden>
+                      <h2>조직 및 직원안내 <a href="#">이동하기 ›</a></h2>
+                      <ul>
+                        <li><a href="#">조직현황</a></li>
+                        <li><a href="#">직원안내</a></li>
+                        <li><a href="#">실국별주요업무</a></li>
+                      </ul>
+                    </section>
+                    <section class="mof-menu-group" id="mof-group-4-2" role="tabpanel" aria-labelledby="mof-category-4-2" data-title="장관, 차관 안내" hidden>
+                      <h2>장관, 차관 안내 <a href="#">이동하기 ›</a></h2>
+                      <ul>
+                        <li><a href="#">장관소개</a></li>
+                        <li><a href="#">장관과의대화</a></li>
+                        <li><a href="#">장관일정</a></li>
+                        <li><a href="#">장관의 말과 글</a></li>
+                        <li><a href="#">차관소개</a></li>
+                        <li><a href="#">역대장관</a></li>
+                        <li><a href="#">역대차관</a></li>
+                      </ul>
+                    </section>
+                    <section class="mof-menu-group" id="mof-group-4-3" role="tabpanel" aria-labelledby="mof-category-4-3" data-title="찾아오시는길" hidden>
+                      <h2>찾아오시는길 <a href="#">이동하기 ›</a></h2>
+                      <ul></ul>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="mof-menu-backdrop" hidden></div>
+    <dialog class="mof-sitemap" id="mof-sitemap" aria-label="해양수산부 전체메뉴">
+      <div class="content-box">
+        <div class="con-head">
+          <div class="logo"><img src="img/header/logo-white.svg" alt="해양수산부" /></div>
+        </div>
+        <div class="con-body">
+          <ul class="sitemap-list">
+            <li>
+              <span class="num">01</span>
+              <a href="#" class="tit">정보공개</a>
+              <ul class="list-sub_02">
+                <li>
+                  <a href="#">정보공개제도 안내</a>
+                  <ul class="list-sub_03">
+                    <li>
+                      <a class="link" href="#">정보공개제도 안내</a>
+                    </li>
+                    <li>
+                      <a href="#">비공개 대상정보 세부기준</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">사전정보공표</a>
+                  <ul class="list-sub_03">
+                    <li>
+                      <a href="#">사전정보공표목록</a>
+                    </li>
+                    <li>
+                      <a href="#">부서별 사전공표정보</a>
+                    </li>
+                    <li>
+                      <a href="#">재정정보</a>
+                    </li>
+                    <li>
+                      <a href="#">국고보조금 정보</a>
+                    </li>
+                    <li>
+                      <a href="#">감사계획 및 결과</a>
+                    </li>
+                    <li>
+                      <a href="#">협동조합 경영공시</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">정보목록</a>
+                  <ul class="list-sub_03">
+                    <li>
+                      <a href="#">정보목록</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">정보공개청구</a>
+                  <ul class="list-sub_03"></ul>
+                </li>
+                <li>
+                  <a href="#">공공데이터 개방</a>
+                  <ul class="list-sub_03">
+                    <li>
+                      <a href="#">공공데이터 개념</a>
+                    </li>
+                    <li>
+                      <a href="#">개방현황 및 활용모델</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">정책실명제</a>
+                  <ul class="list-sub_03">
+                    <li>
+                      <a href="#">중점관리 대상사업</a>
+                    </li>
+                    <li>
+                      <a href="#">국민신청실명제</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="num">02</span>
+              <a href="#" class="tit">민원·참여</a>
+              <ul class="list-sub_02">
+                <li>
+                  <a href="#">국민참여</a>
+                  <ul class="list-sub_03">
+                    <li>
+                      <a href="#">정책토론</a>
+                    </li>
+                    <li>
+                      <a href="#">전자공청회</a>
+                    </li>
+                    <li>
+                      <a href="#">설문조사</a>
+                    </li>
+                    <li>
+                      <a href="#">국민정책제안</a>
+                    </li>
+                    <li>
+                      <a class="link" href="#">국민생각함</a>
+                    </li>
+                    <li>
+                      <a class="link" href="#">110수화(화상)/채팅 상담</a>
+                    </li>
+                    <li>
+                      <a href="#">해양·수산물 방사능 안전, 무엇이든 물어보세요</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">규제개혁</a>
+                  <ul class="list-sub_03">
+                    <li>
+                      <a href="#">규제개혁이란?</a>
+                    </li>
+                    <li>
+                      <a href="#">심사중인규제법안</a>
+                    </li>
+                    <li>
+                      <a href="#">규제개혁 보도자료</a>
+                    </li>
+                    <li>
+                      <a href="#">규제법령정보</a>
+                    </li>
+                    <li>
+                      <a href="#">규제개혁홍보자료</a>
+                    </li>
+                    <li>
+                      <a class="link" href="#">규제개혁제안</a>
+                    </li>
+                    <li>
+                      <a href="#">규제입증요청</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">신고센터</a>
+                  <ul class="list-sub_03">
+                    <li>
+                      <a href="#">공직자 부조리신고</a>
+                    </li>
+                    <li>
+                      <a href="#">보조금 부조리 신고센터</a>
+                    </li>
+                    <li>
+                      <a href="#">청탁금지법 위반신고</a>
+                    </li>
+                    <li>
+                      <a href="#">감사정보청구</a>
+                    </li>
+                    <li>
+                      <a href="#">예산낭비신고센터</a>
+                    </li>
+                    <li>
+                      <a href="#">예산절감제안</a>
+                    </li>
+                    <li>
+                      <a href="#">나의신고보기</a>
+                    </li>
+                    <li>
+                      <a class="link" href="#">어업용면세유류부정유출</a>
+                    </li>
+                    <li>
+                      <a class="link" href="#">공익신고</a>
+                    </li>
+                    <li>
+                      <a href="#">채용비리신고</a>
+                    </li>
+                    <li>
+                      <a class="link" href="#">안전신문고</a>
+                    </li>
+                    <li>
+                      <a href="#">성희롱·성폭력피해신고</a>
+                    </li>
+                    <li>
+                      <a href="#">갑질피해신고</a>
+                    </li>
+                    <li>
+                      <a href="#">신고포상금 제도 안내</a>
+                    </li>
+                    <li>
+                      <a href="#">공공재정환수법 위반신고</a>
+                    </li>
+                    <li>
+                      <a class="link" href="#">선박결함신고</a>
+                    </li>
+                    <li>
+                      <a href="#">정상화 과제 발굴을 위한 국민제안센터</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">전자민원</a>
+                  <ul class="list-sub_03">
+                    <li>
+                      <a href="#">민원신청</a>
+                    </li>
+                    <li>
+                      <a href="#">유사민원조회</a>
+                    </li>
+                    <li>
+                      <a href="#">나의민원</a>
+                    </li>
+                    <li>
+                      <a class="link" href="#">법정민원 서식</a>
+                    </li>
+                    <li>
+                      <a class="link" href="#">국민신청 수산물 방사능 검사</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">적극행정</a>
+                  <ul class="list-sub_03">
+                    <li>
+                      <a href="#">적극행정 소개</a>
+                    </li>
+                    <li>
+                      <a href="#">카드뉴스/웹툰/영상</a>
+                    </li>
+                    <li>
+                      <a href="#">알림/소식</a>
+                    </li>
+                    <li>
+                      <a class="link" href="#">공무원·정책 국민추천</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="num">03</span>
+              <a href="#" class="tit">알림·뉴스</a>
+              <ul class="list-sub_02">
+                <li>
+                  <a href="#">알림</a>
+                  <ul class="list-sub_03">
+                    <li>
+                      <a href="#">공지사항</a>
+                    </li>
+                    <li>
+                      <a href="#">입찰</a>
+                    </li>
+                    <li>
+                      <a href="#">인사</a>
+                    </li>
+                    <li>
+                      <a href="#">채용·공모</a>
+                    </li>
+                    <li>
+                      <a href="#">이벤트 및 공모전</a>
+                    </li>
+                    <li>
+                      <a href="#">중동 관련 선원 비상 상담소통방</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">뉴스</a>
+                  <ul class="list-sub_03">
+                    <li>
+                      <a href="#">보도자료</a>
+                    </li>
+                    <li>
+                      <a href="#">설명자료</a>
+                    </li>
+                    <li>
+                      <a href="#">사진뉴스</a>
+                    </li>
+                    <li>
+                      <a href="#">동영상뉴스</a>
+                    </li>
+                    <li>
+                      <a href="#">카드뉴스</a>
+                    </li>
+                    <li>
+                      <a href="#">해수욕장(방사능)</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">일자리 정보</a>
+                  <ul class="list-sub_03">
+                    <li>
+                      <a href="#">일자리검색</a>
+                    </li>
+                    <li>
+                      <a href="#">유관기관 채용정보</a>
+                    </li>
+                    <li>
+                      <a href="#">자격증</a>
+                    </li>
+                    <li>
+                      <a href="#">전문인력양성</a>
+                    </li>
+                    <li>
+                      <a href="#">이색직업소개</a>
+                    </li>
+                    <li>
+                      <a class="link" href="#">직업정보검색</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">해양수산물방사능 정보</a>
+                  <ul class="list-sub_03">
+                    <li>
+                      <a class="link" href="#">해양·수산물방사능안전정보</a>
+                    </li>
+                    <li>
+                      <a href="#">해양방사능 정보</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="num">04</span>
+              <a href="#" class="tit">정책자료</a>
+              <ul class="list-sub_02">
+                <li>
+                  <a href="#">업무계획</a>
+                  <ul class="list-sub_03">
+                    <li>
+                      <a href="#">연도별 업무계획</a>
+                    </li>
+                    <li>
+                      <a class="link" href="#">2026년 업무계획</a>
+                    </li>
+                    <li>
+                      <a href="#">주요정책 발표</a>
+                    </li>
+                    <li>
+                      <a href="#">법정 계획</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">정책정보</a>
+                  <ul class="list-sub_03">
+                    <li>
+                      <a href="#">정책게시판</a>
+                    </li>
+                    <li>
+                      <a href="#">국제해사동향</a>
+                    </li>
+                    <li>
+                      <a href="#">간행물</a>
+                    </li>
+                    <li>
+                      <a href="#">용어사전</a>
+                    </li>
+                    <li>
+                      <a href="#">자주 묻는 질문</a>
+                    </li>
+                    <li>
+                      <a href="#">해양수산 정책 성과</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">법령정보</a>
+                  <ul class="list-sub_03">
+                    <li>
+                      <a class="link" href="#">법령</a>
+                    </li>
+                    <li>
+                      <a href="#">훈령/예규/고시/공고</a>
+                    </li>
+                    <li>
+                      <a href="#">입법예고</a>
+                    </li>
+                    <li>
+                      <a href="#">행정예고</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">통계정보</a>
+                  <ul class="list-sub_03">
+                    <li>
+                      <a class="link" href="#">통계정보조회</a>
+                    </li>
+                    <li>
+                      <a class="link" href="#">통계공표일정</a>
+                    </li>
+                    <li>
+                      <a class="link" href="#">통계연보</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="num">05</span>
+              <a href="#" class="tit">기관소개</a>
+              <ul class="list-sub_02">
+                <li>
+                  <a href="#">기관현황</a>
+                  <ul class="list-sub_03">
+                    <li>
+                      <a href="#">비전 및 목표</a>
+                    </li>
+                    <li>
+                      <a href="#">설립목적 및 연혁</a>
+                    </li>
+                    <li>
+                      <a href="#">MI · 배너</a>
+                    </li>
+                    <li>
+                      <a href="#">관할해역</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">조직 및 직원안내</a>
+                  <ul class="list-sub_03">
+                    <li>
+                      <a href="#">조직현황</a>
+                    </li>
+                    <li>
+                      <a href="#">직원안내</a>
+                    </li>
+                    <li>
+                      <a href="#">실국별주요업무</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">장관, 차관 안내</a>
+                  <ul class="list-sub_03">
+                    <li>
+                      <a href="#">장관소개</a>
+                    </li>
+                    <li>
+                      <a href="#">장관과의대화</a>
+                    </li>
+                    <li>
+                      <a href="#">장관일정</a>
+                    </li>
+                    <li>
+                      <a href="#">장관의 말과 글</a>
+                    </li>
+                    <li>
+                      <a href="#">차관소개</a>
+                    </li>
+                    <li>
+                      <a href="#">역대장관</a>
+                    </li>
+                    <li>
+                      <a href="#">역대차관</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">찾아오시는길</a>
+                  <ul class="list-sub_03"></ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="btn-close btn-sitemap-close mof-sitemap-close" title="사이트맵 닫기"><span class="icon"></span><span class="mof-sr-only">사이트맵 닫기</span></button>
+      </div>
+    </dialog>
+    <main>
+      <section id="sec_1" class="sec-1">
+        <div class="sec-1-grid flex-cen">
+          <div class="left-box">
+            <div class="sec-1-main-swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#"><img decoding="async" fetchpriority="high" src="img/sec_1/main/sec_1_main_img_1.webp" alt="슬라이드 이미지" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"><img decoding="async" loading="lazy" src="img/sec_1/main/sec_1_main_img_2.webp" alt="슬라이드 이미지" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"><img decoding="async" loading="lazy" src="img/sec_1/main/sec_1_main_img_3.webp" alt="슬라이드 이미지" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"><img decoding="async" loading="lazy" src="img/sec_1/main/sec_1_main_img_4.webp" alt="슬라이드 이미지" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"><img decoding="async" loading="lazy" src="img/sec_1/main/sec_1_main_img_5.webp" alt="슬라이드 이미지" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"><img decoding="async" loading="lazy" src="img/sec_1/main/sec_1_main_img_6.webp" alt="슬라이드 이미지" /></a>
+                </div>
+              </div>
+
+              <div class="main-button-box flex-cen">
+                <div class="main-pagination swiper-pagination fs-18 fw-400"></div>
+                <div class="main-prev swiper-button-prev">
+                  <img src="img/sec_1/main/arrow-left.svg" alt="화살표" />
+                </div>
+                <div class="main-next swiper-button-next">
+                  <img src="img/sec_1/main/arrow-right.svg" alt="화살표" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-box">
+            <div class="top-box flex">
+              <h2 class="title fs-25 fw-600 title-text">사진뉴스</h2>
+
+              <div class="sub-button-box flex">
+                <div class="sub-pagination swiper-pagination fs-18 fw-400"></div>
+                <div class="sub-prev swiper-button-prev">
+                  <img src="img/sec_1/sub/arrow_left.svg" alt="화살표" />
+                </div>
+                <div class="sub-next swiper-button-next">
+                  <img src="img/sec_1/sub/arrow_right.svg" alt="화살표" />
+                </div>
+                <a href="#" class="plus-button flex-cen">
+                  <img src="img/sec_1/sub/plus_btn.svg" alt="더보기" class="plus-img" />
+                  <img src="img/sec_1/sub/plus_btn_hover.svg" alt="더보기" class="plus-img-hover" />
+                </a>
+              </div>
+            </div>
+
+            <div class="bottom-box">
+              <div class="sec-1-sub-swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img decoding="async" class="slide-img" src="img/sec_1/sub/sec_1_sub_img_1.webp" alt="슬라이드 이미지" />
+                    </a>
+
+                    <a href="#">
+                      <div class="text-box">
+                        <div class="text-top">
+                          <p class="fw-600 fs-19">제 31회 바다의 날 기념식</p>
+                        </div>
+
+                        <div class="text-bottom flex gap-10">
+                          <img class="text-img" src="img/sec_1/sub/sec_1_sub_itext_img.svg" alt="시계 이미지" />
+                          <p>2026.05.28.</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img decoding="async" loading="lazy" class="slide-img" src="img/sec_1/sub/sec_1_sub_img_2.webp" alt="슬라이드 이미지" />
+                    </a>
+
+                    <a href="#">
+                      <div class="text-box">
+                        <div class="text-top">
+                          <p class="fw-600 fs-19">항운노조 간담회를 개최하여 현장 목소리 경청</p>
+                        </div>
+
+                        <div class="text-bottom flex gap-10">
+                          <img class="text-img" src="img/sec_1/sub/sec_1_sub_itext_img.svg" alt="시계 이미지" />
+                          <p>2026.05.20.</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec-2">
+        <div class="sec-2-grid flex">
+          <div class="left-box flex-col">
+            <div class="top-box flex">
+              <div class="text-box flex-cen gap-10">
+                <h2 class="title fs-25 fw-600 title-text">바다소통</h2>
+                <img src="img/sec_2/left/sec_2_icon_f.svg" alt="icon" />
+              </div>
+
+              <div class="sec-2-left-button-box flex">
+                <div class="sec-2-left-pagination swiper-pagination fs-18 fw-400"></div>
+                <div class="sec-2-left-prev swiper-button-prev">
+                  <img src="img/sec_1/sub/arrow_left.svg" alt="화살표" />
+                </div>
+                <div class="sec-2-left-next swiper-button-next">
+                  <img src="img/sec_1/sub/arrow_right.svg" alt="화살표" />
+                </div>
+              </div>
+            </div>
+            <div class="bottom-box">
+              <div class="sec-2-left-swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img decoding="async" loading="lazy" class="slide-img" src="img/sec_2/left/sec_2_left_img_1.webp" alt="슬라이드 이미지" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img decoding="async" loading="lazy" class="slide-img" src="img/sec_2/left/sec_2_left_img_2.webp" alt="슬라이드 이미지" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img decoding="async" loading="lazy" class="slide-img" src="img/sec_2/left/sec_2_left_img_3.webp" alt="슬라이드 이미지" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cen-box">
+            <div class="tab-box flex-cen">
+              <ul class="tab-head flex-cen">
+                <li class="active">
+                  <a href="#" onclick="return false;">보도자료</a>
+                  <div class="tab-body">
+                    <ul>
+                      <li><a href="#">해수부·해경청, 폐어구 발생 예방 위한 합동 점검 나선다</a><span>2026.05.29.</span></li>
+                      <li><a href="#">(동정) 해양수산 가족들과 소통하고 감사의 표시 전해</a><span>2026.05.29.</span></li>
+                      <li><a href="#">작은 항만사업장까지 꼼꼼하게... 안전시설 지원 강화</a><span>2026.05.29.</span></li>
+                      <li><a href="#">여름 휴가철 앞두고 관계기관 합동 마리나업 안전점검 실시</a><span>2026.05.29.</span></li>
+                      <li><a href="#">6월의 수산물, 어촌여행지, 해양생물, 등대, 무인도서 선정</a><span>2026.05.29.</span></li>
+                      <li><a href="#">“해양사고를 막는 소중한 경험의 힘” 준해양사고 사례를 찾습니다</a><span>2026.05.29.</span></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" onclick="return false;">공지사항</a>
+                  <div class="tab-body">
+                    <ul>
+                      <li><a href="#">민간위탁사업 계약 체결 결과 공개(2026년 해양수산 창업콘테스트)</a><span>2026.06.04.</span></li>
+                      <li><a href="#">안전관리 우주사업장 모범사례 경진대회 공고</a><span>2026.06.02.</span></li>
+                      <li><a href="#">2026년 제12회 북극아카데미 국내참가자 모집 공고</a><span>2026.06.02.</span></li>
+                      <li><a href="#">성범죄 경력자 취업점검 확인 결과 공개표</a><span>2026.06.01</span></li>
+                      <li><a href="#">선박용물건 및 소형선박의 지정시험기관(건축자재시험연구원) 지정 고시</a><span>2026.05.29.</span></li>
+                      <li><a href="#">2026년 해외물류시장 개척지원사업(3차) 모집 공고</a><span>2026.05.29.</span></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" onclick="return false;">입찰</a>
+                  <div class="tab-body">
+                    <ul>
+                      <li><a href="#">(긴급사전규격공고) 스마트기술 도입을 통한 항만건설 시공단계 최적화 방안 연구용역</a><span>2026.06.04.</span></li>
+                      <li><a href="#">(긴급입찰재공고) 항만배후부지 활용 및 항만배후단지 투자유치 효율화 방안 마련연구용역</a><span>2026.06.02.</span></li>
+                      <li><a href="#">(긴급입찰재공고) 2026년 해양포유동물 관리체계 개선 연구</a><span>2026.06.04.</span></li>
+                      <li><a href="#">(긴급입찰재공고) 스마트수산업 추진단(융합연구단) 운영·관리</a><span>2026.06.02.</span></li>
+                      <li><a href="#">(긴급입찰공고) 제13회 제주 국제크루즈포럼 행사 위탁 용역</a><span>2026.06.01.</span></li>
+                      <li><a href="#">(긴급입찰공고) 2026년 낚시어선 승선자 관리시스템 고도화</a><span>2026.06.01.</span></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" onclick="return false;">인사</a>
+                  <div class="tab-body">
+                    <ul>
+                      <li><a href="#">인사발령(계장급 휴직) 알림</a><span>2026.06.02.</span></li>
+                      <li><a href="#">인사발령(명예퇴직) 알림</a><span>2026.05.29.</span></li>
+                      <li><a href="#">인사발령(과장급 전보 등)</a><span>2026.05.29.</span></li>
+                      <li><a href="#">인사발령(과장급 퇴직) 알림</a><span>2026.05.29.</span></li>
+                      <li><a href="#">인사발령(일반임기제 공무원 신규임용 등) 알림</a><span>2026.05.29.</span></li>
+                      <li><a href="#">인사발령(대우공무원 선발) 알림</a><span>2026.05.27.</span></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" onclick="return false;">채용</a>
+                  <div class="tab-body">
+                    <ul>
+                      <li><a href="#">2026년 제2회 해양수산부 전문임기제 공무원(항만안전점검관) 경력경쟁채용시험 최종합격자 공고</a><span>2026.05.29.</span></li>
+                      <li><a href="#">2026년 제2차 해양수산부(본부) 청년인턴 채용 서류전형 합격자 명단 및 면접전형 일정 공고</a><span>2026.05.29.</span></li>
+                      <li><a href="#">국립울진해양과학관 비상임임원 모집 공고</a><span>2026.05.26.</span></li>
+                      <li><a href="#">2026년 제3회 전문임기제 공무원(청년보좌역) 경력경쟁채용시험 최종합격자 공고</a><span>2026.05.22.</span></li>
+                      <li><a href="#">부산항보안공사 보안본부장 모집공고</a><span>2026.05.21.</span></li>
+                      <li><a href="#">부산항보안공사 경영본부장 모집공고</a><span>2026.05.21.</span></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" onclick="return false;">공모전</a>
+                  <div class="tab-body">
+                    <ul>
+                      <li><a href="#">어업인 대상 구명조끼 착용 관련 표어, 포스터 및 UCC 공모전 개최 계획</a><span>2026.05.13.</span></li>
+                      <li><a href="#">제13회 해양수산 비즈니스 공공서비스 공모전 개최</a><span>2026.05.06.</span></li>
+                      <li><a href="#">2026 국제크루즈 체험단 모집</a><span>2026.04.22.</span></li>
+                      <li><a href="#">제19회 장보고대상 대국민 온라인 투표 실시</a><span>2025.10.22.</span></li>
+                      <li><a href="#">2035 NDC 대국민 공개 논의 토론회 개최 안내</a><span>2025.09.17.</span></li>
+                      <li><a href="#">제12회 해양수산 비즈니스 공공서비스 공모전 1차 결과 안내</a><span>2025.07.28.</span></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <div class="plus-box flex-cen">
+                <a href="#" class="plus-button flex-cen">
+                  <img src="img/sec_1/sub/plus_btn.svg" alt="더보기" class="plus-img" />
+                  <img src="img/sec_1/sub/plus_btn_hover.svg" alt="더보기" class="plus-img-hover" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="right-box">
+            <div class="top-box flex">
+              <div class="text-box flex-cen">
+                <h2 class="title fs-25 fw-600 title-text">알림판</h2>
+              </div>
+
+              <div class="sec-2-right-button-box flex">
+                <div class="sec-2-right-pagination swiper-pagination fs-18 fw-400"></div>
+                <div class="sec-2-right-prev swiper-button-prev">
+                  <img src="img/sec_1/sub/arrow_left.svg" alt="화살표" />
+                </div>
+                <div class="sec-2-right-next swiper-button-next">
+                  <img src="img/sec_1/sub/arrow_right.svg" alt="화살표" />
+                </div>
+              </div>
+            </div>
+            <div class="bottom-box">
+              <div class="sec-2-right-swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img decoding="async" loading="lazy" class="slide-img" src="img/sec_2/right/sec_2_right_img_1.webp" alt="슬라이드 이미지" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img decoding="async" loading="lazy" class="slide-img" src="img/sec_2/right/sec_2_right_img_2.webp" alt="슬라이드 이미지" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img decoding="async" loading="lazy" class="slide-img" src="img/sec_2/right/sec_2_right_img_3.webp" alt="슬라이드 이미지" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img decoding="async" loading="lazy" class="slide-img" src="img/sec_2/right/sec_2_right_img_4.webp" alt="슬라이드 이미지" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img decoding="async" loading="lazy" class="slide-img" src="img/sec_2/right/sec_2_right_img_5.webp" alt="슬라이드 이미지" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img decoding="async" loading="lazy" class="slide-img" src="img/sec_2/right/sec_2_right_img_6.webp" alt="슬라이드 이미지" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img decoding="async" loading="lazy" class="slide-img" src="img/sec_2/right/sec_2_right_img_7.webp" alt="슬라이드 이미지" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img decoding="async" loading="lazy" class="slide-img" src="img/sec_2/right/sec_2_right_img_8.webp" alt="슬라이드 이미지" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img decoding="async" loading="lazy" class="slide-img" src="img/sec_2/right/sec_2_right_img_9.webp" alt="슬라이드 이미지" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img decoding="async" loading="lazy" class="slide-img" src="img/sec_2/right/sec_2_right_img_10.webp" alt="슬라이드 이미지" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img decoding="async" loading="lazy" class="slide-img" src="img/sec_2/right/sec_2_right_img_11.webp" alt="슬라이드 이미지" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img decoding="async" loading="lazy" class="slide-img" src="img/sec_2/right/sec_2_right_img_12.webp" alt="슬라이드 이미지" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img decoding="async" loading="lazy" class="slide-img" src="img/sec_2/right/sec_2_right_img_13.webp" alt="슬라이드 이미지" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img decoding="async" loading="lazy" class="slide-img" src="img/sec_2/right/sec_2_right_img_14.webp" alt="슬라이드 이미지" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img decoding="async" loading="lazy" class="slide-img" src="img/sec_2/right/sec_2_right_img_15.webp" alt="슬라이드 이미지" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec-3">
+        <div class="sec-3-grid flex">
+          <div class="left-box flex-col">
+            <div class="top-box flex">
+              <div class="text-box flex-cen gap-10">
+                <h2 class="title fs-25 fw-600 title-text">동영상</h2>
+                <img src="img/sec_3/left/sec_3_left_img_i.svg" alt="icon" />
+              </div>
+
+              <div class="sec-3-left-button-box flex">
+                <div class="sec-3-left-pagination swiper-pagination fs-18 fw-400"></div>
+                <div class="sec-3-left-prev swiper-button-prev">
+                  <img src="img/sec_1/sub/arrow_left.svg" alt="화살표" />
+                </div>
+                <div class="sec-3-left-next swiper-button-next">
+                  <img src="img/sec_1/sub/arrow_right.svg" alt="화살표" />
+                </div>
+              </div>
+            </div>
+            <div class="bottom-box">
+              <div class="sec-3-left-swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img decoding="async" loading="lazy" class="slide-img" src="img/sec_3/left/sec_3_left_img_1.webp" alt="슬라이드 이미지" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img decoding="async" loading="lazy" class="slide-img" src="img/sec_3/left/sec_3_left_img_2.webp" alt="슬라이드 이미지" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img decoding="async" loading="lazy" class="slide-img" src="img/sec_3/left/sec_3_left_img_3.webp" alt="슬라이드 이미지" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cen-box">
+            <div class="tab-box flex-cen">
+              <h2 class="title-text title"><span class="fw-800">이달의 </span>해양수산</h2>
+              <ul class="tab-head flex-cen">
+                <li class="active">
+                  <a href="#" onclick="return false;">수산물</a>
+                  <div class="tab-body flex">
+                    <div class="img-box">
+                      <a href="#"><img decoding="async" loading="lazy" src="img/sec_3/cen/sec_3_cen_img_1.webp" alt="sec-3-img" /></a>
+                    </div>
+                    <div class="text-box flex-col">
+                      <a href="#" class="text-img"><img src="img/sec_3/cen/sec_3_cen_i.svg" alt="5월" /></a>
+                      <h2 class="fw-600 fs-19">이달의 수산물 다시마, 조피볼락</h2>
+                      <p class="fs-17">
+                        해양수산부(장관 황종우)는 5월 이달의 수산물로<br />
+                        다시마와 조피볼락을 선정했다. 다시마는
+                      </p>
+                      <div class="button-box flex">
+                        <a href="#" class="plus-button fw-400 fs-16"
+                          >더보기 <img src="img/sec_3/cen/plus_btn2.svg" alt="더보기" class="plus-img" /> <img src="img/sec_3/cen/plus_btn_hover.svg" alt="더보기" class="plus-img-hover"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" onclick="return false;">등대</a>
+                  <div class="tab-body flex">
+                    <div class="img-box">
+                      <a href="#"><img decoding="async" loading="lazy" src="img/sec_3/cen/sec_3_cen_img_2.webp" alt="sec-3-img" /></a>
+                    </div>
+                    <div class="text-box flex-col">
+                      <a href="#" class="text-img"><img src="img/sec_3/cen/sec_3_cen_i.svg" alt="5월" /></a>
+                      <h2 class="fw-600 fs-19">이달의 등대 비안도향 북방파제등대</h2>
+                      <p class="fs-17">
+                        해양수산부는 5월 이달의 등대로<br />
+                        전북특별자치도 군산시 옥도면 비안도리에
+                      </p>
+                      <div class="button-box flex">
+                        <a href="#" class="plus-button fw-400 fs-16"
+                          >더보기 <img src="img/sec_3/cen/plus_btn2.svg" alt="더보기" class="plus-img" /> <img src="img/sec_3/cen/plus_btn_hover.svg" alt="더보기" class="plus-img-hover"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" onclick="return false;">어촌여행지</a>
+                  <div class="tab-body flex">
+                    <div class="img-box">
+                      <a href="#"><img decoding="async" loading="lazy" src="img/sec_3/cen/sec_3_cen_img_3.webp" alt="sec-3-img" /></a>
+                    </div>
+                    <div class="text-box flex-col">
+                      <a href="#" class="text-img"><img src="img/sec_3/cen/sec_3_cen_i.svg" alt="5월" /></a>
+                      <h2 class="fw-600 fs-19">이달의 등대 비안도향 북방파제등대</h2>
+                      <p class="fs-17">
+                        해양수산부는 5월 이달의 어촌 여행지로 전북<br />
+                        고창 장호마을과 전남 함평 돌머리마을을
+                      </p>
+                      <div class="button-box flex">
+                        <a href="#" class="plus-button fw-400 fs-16"
+                          >더보기 <img src="img/sec_3/cen/plus_btn2.svg" alt="더보기" class="plus-img" /> <img src="img/sec_3/cen/plus_btn_hover.svg" alt="더보기" class="plus-img-hover"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" onclick="return false;">무인도서</a>
+                  <div class="tab-body flex">
+                    <div class="img-box">
+                      <a href="#"><img decoding="async" loading="lazy" src="img/sec_3/cen/sec_3_cen_img_4.webp" alt="sec-3-img" /></a>
+                    </div>
+                    <div class="text-box flex-col">
+                      <a href="#" class="text-img"><img src="img/sec_3/cen/sec_3_cen_i.svg" alt="5월" /></a>
+                      <h2 class="fw-600 fs-19">이달의 등대 모개도</h2>
+                      <p class="fs-17">
+                        해양수산부는 5월 이달의 무인도서로 전라남도<br />
+                        여수시 소라면에 위치한 개발가능무인도서*인
+                      </p>
+                      <div class="button-box flex">
+                        <a href="#" class="plus-button fw-400 fs-16"
+                          >더보기 <img src="img/sec_3/cen/plus_btn2.svg" alt="더보기" class="plus-img" /> <img src="img/sec_3/cen/plus_btn_hover.svg" alt="더보기" class="plus-img-hover"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="right-box">
+            <div class="text-box">
+              <h2 class="title .title-text fw-600 fs-25">열린장관실</h2>
+            </div>
+            <div class="img-box">
+              <a href="#"><img decoding="async" loading="lazy" src="img/sec_3/right/sec_3_right_img_1.webp" alt="right-img" /></a>
+              <div class="img-text-box-1">
+                <p class="fw-500 fs-23">안녕하십니까</p>
+                <p class="fw-500 fs-23">해양수산부</p>
+                <p class="fw-700 fs-23">장관 황종우</p>
+                <p class="fw-500 fs-23">입니다.</p>
+              </div>
+              <div class="img-text-box-2 flex-cen">
+                <a href="#" class="fw-400 fs-18 flex-cen">장관소개</a>
+                <a href="#" class="fw-400 fs-18 flex-cen">장관과의 대화</a>
+                <a href="#" class="fw-400 fs-18 flex-cen">주요 일정</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec-4">
+        <div class="quick-area">
+          <div class="section-con type-a con_back">
+            <div class="title-box">
+              <h2 class="sc-title"><strong class="em">자주찾는</strong> 메뉴</h2>
+            </div>
+            <div class="con-wrap">
+              <ul class="menu-list" role="tablist" aria-label="자주찾는 메뉴">
+                <li class="tab01" role="presentation">
+                  <button
+                    type="button"
+                    class="btn-quick-tab active"
+                    data-quick-tab="t01"
+                    data-type="A"
+                    id="mof-quick-tab-1"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="mof-quick-panel-1"
+                    tabindex="0"
+                  >
+                    <span>퀵메뉴</span>
+                  </button>
+                  <div class="quick-tab-box active" data-quick-tabcon="t01" id="mof-quick-panel-1" role="tabpanel" aria-labelledby="mof-quick-tab-1" aria-hidden="false">
+                    <ul class="quick-list v1">
+                      <li>
+                        <a href="#" class="item v1" title="주요업무계획 바로가기"> <strong class="tit">주요업무계획</strong> </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item v5" title="해양방사능정보 바로가기"> <strong class="tit">해양방사능정보</strong> </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item v2" title="방사능검사신청 바로가기"> <strong class="tit">방사능검사신청</strong> </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item v3" title="적극행정 바로가기"> <strong class="tit">적극행정</strong> </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item v4" title="민원신청 바로가기"> <strong class="tit">민원신청</strong> </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item v8" title="복무확인서발급 바로가기"> <strong class="tit">복무확인서발급</strong> </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item v6" title="국제해사동향 바로가기"> <strong class="tit">국제해사동향</strong> </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item v7" title="직원검색 바로가기"> <strong class="tit">직원검색</strong> </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="tab01" role="presentation">
+                  <button type="button" class="btn-quick-tab" data-quick-tab="t02" data-type="B" id="mof-quick-tab-2" role="tab" aria-selected="false" aria-controls="mof-quick-panel-2" tabindex="-1">
+                    <span>해양수산정보</span>
+                  </button>
+                  <div class="quick-tab-box" data-quick-tabcon="t02" id="mof-quick-panel-2" role="tabpanel" aria-labelledby="mof-quick-tab-2" aria-hidden="true" inert="">
+                    <ul class="quick-list v2">
+                      <li>
+                        <a href="#" class="item v1" title="해운항만물류 정보시스템 바로가기">
+                          <strong class="tit"
+                            >해운항만물류<br />
+                            정보시스템</strong
+                          >
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item v2" title="수산 정보포털 바로가기">
+                          <strong class="tit"
+                            >수산<br />
+                            정보포털</strong
+                          >
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item v3" title="해양환경 종합정보 바로가기">
+                          <strong class="tit"
+                            >해양환경<br />
+                            종합정보</strong
+                          >
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item v4" title="해양안전 종합정보 바로가기">
+                          <strong class="tit"
+                            >해양안전<br />
+                            종합정보</strong
+                          >
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item v5" title="해양수산 예보속보 바로가기">
+                          <strong class="tit"
+                            >해양수산<br />
+                            예보속보</strong
+                          >
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item v6" title="원산지표시 위반공표 바로가기">
+                          <strong class="tit"
+                            >원산지표시<br />
+                            위반공표</strong
+                          >
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec-5">
+        <div class="sec-5-grid flex">
+          <div class="title-box">
+            <h2 class="fs-25"><span class="fw-800">배너</span>모음</h2>
+          </div>
+          <div class="plus-button-box">
+            <a href="#" class="plus-button flex-cen">
+              <img src="img/sec_1/sub/plus_btn.svg" alt="더보기" class="plus-img" />
+              <img src="img/sec_1/sub/plus_btn_hover.svg" alt="더보기" class="plus-img-hover" />
+            </a>
+          </div>
+          <div class="left-button-box">
+            <div class="sec-5-prev swiper-button-prev">
+              <img src="img/sec_1/sub/arrow_left.svg" alt="화살표" />
+            </div>
+          </div>
+          <div class="con-box">
+            <div class="sec-5-swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="flex-cen gap-6"><span>안전신문고</span><img src="img/sec_5/Vector.svg" alt="Vector img" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="flex-cen gap-6"><span>원양산업종합정보시스템</span><img src="img/sec_5/Vector.svg" alt="Vector img" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="flex-cen gap-6"><span>국립해양생물자원관</span><img src="img/sec_5/Vector.svg" alt="Vector img" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="flex-cen gap-6"><span>국립해양박물관</span><img src="img/sec_5/Vector.svg" alt="Vector img" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="flex-cen gap-6"><span>가보고 싶은 섬</span><img src="img/sec_5/Vector.svg" alt="Vector img" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="flex-cen gap-6"><span>국민참여예산</span><img src="img/sec_5/Vector.svg" alt="Vector img" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="flex-cen gap-6"><span>국고보조금 부정수급 제보</span><img src="img/sec_5/Vector.svg" alt="Vector img" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="flex-cen gap-6"><span>수입식품방사능안전정보</span><img src="img/sec_5/Vector.svg" alt="Vector img" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="flex-cen gap-6"><span>국민신청 수산물 방사능 검사</span><img src="img/sec_5/Vector.svg" alt="Vector img" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="flex-cen gap-6"><span>대한민국 대통령실</span><img src="img/sec_5/Vector.svg" alt="Vector img" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="flex-cen gap-6"><span>대한민국정책브리핑</span><img src="img/sec_5/Vector.svg" alt="Vector img" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="flex-cen gap-6"><span>혁신24</span><img src="img/sec_5/Vector.svg" alt="Vector img" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="flex-cen gap-6"><span>e나라도움-국고보조금통</span><img src="img/sec_5/Vector.svg" alt="Vector img" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="flex-cen gap-6"><span>국립등대박물관</span><img src="img/sec_5/Vector.svg" alt="Vector img" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-button-box">
+            <div class="sec-5-next swiper-button-next">
+              <img src="img/sec_1/sub/arrow_right.svg" alt="화살표" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="button">
+        <a href="#sec_1" class="flex-cen"><img src="img/footer/top_btn.svg" alt="arrow" /></a>
+      </div>
+      <div class="footer-top">
+        <div class="footer-top-grid">
+          <ul class="site-list flex">
+            <li class="flex">
+              <a href="#" class="flex-spa"><span>중앙행정기관 누리집</span><img decoding="async" src="img/footer/footer_top_arrow_img.png" alt="arrow" /></a>
+              <ul class="site-depth">
+                <li><a href="#">고용노동부</a></li>
+                <li><a href="#">과학기술정보통신부</a></li>
+                <li><a href="#">교육부</a></li>
+                <li><a href="#">국방부</a></li>
+                <li><a href="#">국토교통부</a></li>
+                <li><a href="#">재정경제부</a></li>
+                <li><a href="#">농림축산식품부</a></li>
+                <li><a href="#">문화체육관광부</a></li>
+                <li><a href="#">법무부</a></li>
+                <li><a href="#">보건복지부</a></li>
+                <li><a href="#">산업통상부</a></li>
+              </ul>
+            </li>
+            <li class="flex">
+              <a href="#" class="flex-spa"><span>소속기관 누리집</span><img decoding="async" src="img/footer/footer_top_arrow_img.png" alt="arrow" /></a>
+              <ul class="site-depth">
+                <li><a href="#">국립수산물품질관리원</a></li>
+                <li><a href="#">국립해양조사원</a></li>
+                <li><a href="#">동해어업관리단</a></li>
+                <li><a href="#">서해어업관리단</a></li>
+                <li><a href="#">남해어업관리단</a></li>
+                <li><a href="#">부산해사고등학교</a></li>
+                <li><a href="#">인천해사고등학교</a></li>
+                <li><a href="#">국립해양측위정보원</a></li>
+                <li><a href="#">해양수산인재개발원</a></li>
+                <li><a href="#">부산지방해양수산청</a></li>
+                <li><a href="#">부산지방해양수산청</a></li>
+              </ul>
+            </li>
+            <li class="flex">
+              <a href="#" class="flex-spa"><span>산하기관 누리집</span><img decoding="async" src="img/footer/footer_top_arrow_img.png" alt="arrow" /></a>
+              <ul class="site-depth">
+                <li><a href="#">해양환경공단</a></li>
+                <li><a href="#">한국해양교통안전공단</a></li>
+                <li><a href="#">국립해양과학관</a></li>
+                <li><a href="#">해양수산과학기술진흥원</a></li>
+                <li><a href="#">한국해양과학기술원</a></li>
+                <li><a href="#">국립해양생물자원관</a></li>
+                <li><a href="#">한국해양조사협회</a></li>
+                <li><a href="#">한국수산자원공단</a></li>
+                <li><a href="#">한국어촌어항공단</a></li>
+                <li><a href="#">한국해양진흥공사</a></li>
+                <li><a href="#">한국해양수산연수원</a></li>
+              </ul>
+            </li>
+            <li class="flex">
+              <a href="#" class="flex-spa"><span>해양수산부 운영 누리집</span><img decoding="async" src="img/footer/footer_top_arrow_img.png" alt="arrow" /></a>
+              <ul class="site-depth">
+                <li><a href="#">국가어도정보시스템</a></li>
+                <li><a href="#">해양환경종합정보</a></li>
+                <li><a href="#">바다여행</a></li>
+                <li><a href="#">수산정보포털(구 어업자원포털)</a></li>
+                <li><a href="#">연안포털</a></li>
+                <li><a href="#">원양산업종합정보시스템</a></li>
+                <li><a href="#">항만시설장비관리시스템</a></li>
+                <li><a href="#">해운항만물류정보시스템(PORT-MIS)</a></li>
+                <li><a href="#">어촌어항관리시스템</a></li>
+                <li><a href="#">해양안전종합정보시스템</a></li>
+                <li><a href="#">해양생명자원통합정보시스템</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-grid">
+          <div class="logo-box">
+            <img src="img/footer/logo.svg" alt="로고 이미지" />
+          </div>
+          <div class="cen-box flex">
+            <div class="left-text-box flex-col gap-14">
+              <p class="fs-16">
+                본관 : (48789) 부산광역시 동구 중앙대로 361번길 14(수정동) 아이엠빌딩 해양수산부<br />
+                별관 : (48728) 부산광역시 동구 중앙대로 360(수정동) 협성타워 해양수산부
+              </p>
+              <p class="fs-16"><span class="fw-700">정부민원안내 국번없이 110</span>(무료)365일 24시간, 수어상담 평일 (09:00~18:00)</p>
+              <p class="fs-16 fw-700">당직실: 051-773-5990</p>
+            </div>
+            <div class="right-text-box flex-col">
+              <div class="link-box flex-col">
+                <a href="#" class="flex fs-18"><span>이용안내</span><img src="img/sec_1/sub/arrow_right.svg" alt="화살표" /></a>
+                <a href="#" class="flex fs-18"><span>찾아오시는 길</span><img src="img/sec_1/sub/arrow_right.svg" alt="화살표" /></a>
+              </div>
+              <div class="icon-box flex gap-6">
+                <a href="#"><img src="img/footer/footer_icon_b.svg" alt="icon" /></a>
+                <a href="#"><img src="img/footer/footer_icon_i.svg" alt="icon" /></a>
+                <a href="#"><img src="img/footer/footer_icon_f.svg" alt="icon" /></a>
+                <a href="#"><img src="img/footer/footer_icon_y.svg" alt="icon" /></a>
+                <a href="#"><img src="img/footer/footer_icon_t.svg" alt="icon" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="last-box flex-spa">
+            <div class="left-box flex gap-14">
+              <a href="#" class="fs-17 fw-700">개인정보처리방침</a>
+              <a href="#" class="fs-17">저작관 정책</a>
+              <a href="#" class="fs-17">이메일무단수집거부</a>
+            </div>
+            <div class="right-box">
+              <p>Copyright © Ministry of Oceans and Fisheries. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- 제이쿼리 -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- 스와이퍼 js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- 스크립트 js -->
+    <script defer src="js/script.js"></script>
+    <script defer src="js/additions.js"></script>
+  </body>
+</html>

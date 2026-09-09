@@ -1,0 +1,10 @@
+/* 그리드 */
+:root{
+    /* grid */
+    --maxwidth: 1400px;
+    --cen: 0 auto;
+
+    /* color */
+    --point-color: #005cb2;
+    --point-color-2: #3c69c0;
+}

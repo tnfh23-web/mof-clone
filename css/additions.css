@@ -1,0 +1,173 @@
+/* 원본 SVG로 표시하는 이전 / 다음 버튼과 호버 효과 */
+.mof-slide-arrow {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 0;
+  background: transparent center / 22px auto no-repeat;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+.mof-slide-arrow > img,
+.mof-slide-arrow > svg {
+  display: none;
+}
+.mof-slide-arrow::after {
+  content: none;
+}
+.mof-slide-prev {
+  background-image: url("../img/header/arrow-left.svg");
+}
+.mof-slide-next {
+  background-image: url("../img/header/arrow-right.svg");
+}
+.mof-slide-arrow:hover,
+.mof-slide-arrow:focus-visible {
+  border-color: #005cb2;
+  background-color: #e8f2fc;
+}
+.mof-slide-prev:hover,
+.mof-slide-prev:focus-visible {
+  background-image: url("../img/header/arrow-left-blue.svg");
+}
+.mof-slide-next:hover,
+.mof-slide-next:focus-visible {
+  background-image: url("../img/header/arrow-right-blue.svg");
+}
+.mof-slide-arrow-main {
+  border: 0;
+  border-radius: 40px;
+  background-size: auto;
+}
+.mof-slide-arrow-main.mof-slide-prev {
+  background-image: url("../img/header/arrow-left-white.svg");
+}
+.mof-slide-arrow-main.mof-slide-next {
+  background-image: url("../img/header/arrow-right-white.svg");
+}
+.mof-slide-arrow-main:hover,
+.mof-slide-arrow-main:focus-visible {
+  background-color: #333;
+}
+.mof-slide-arrow-main.mof-slide-prev:hover,
+.mof-slide-arrow-main.mof-slide-prev:focus-visible {
+  background-image: url("../img/header/arrow-left-yellow.svg");
+}
+.mof-slide-arrow-main.mof-slide-next:hover,
+.mof-slide-arrow-main.mof-slide-next:focus-visible {
+  background-image: url("../img/header/arrow-right-yellow.svg");
+}
+main .sec-1-grid .right-box .mof-slide-arrow {
+  width: 26px;
+  height: 26px;
+}
+.mof-slide-arrow-banner {
+  background-color: #fff;
+  background-size: auto;
+  transition:
+    border 0.3s,
+    background 0.3s;
+}
+.mof-slide-arrow-banner:hover,
+.mof-slide-arrow-banner:focus-visible {
+  background-color: #fff;
+}
+
+/* 기존 화살표 사이에 들어가는 정지 / 재생 버튼 */
+.mof-autoplay {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  flex: 0 0 25px;
+  width: 25px;
+  height: 25px;
+  margin: 0 2px;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: url("../img/header/pause.svg") center / 22px auto no-repeat;
+  color: #33363d;
+  cursor: pointer;
+}
+
+.sub-button-box > .mof-autoplay {
+  flex-basis: 26px;
+  width: 26px;
+  height: 26px;
+}
+
+.sec-5-grid .mof-autoplay {
+  flex-basis: 30px;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  background-size: auto;
+}
+
+.mof-autoplay::before {
+  content: none;
+}
+
+.mof-autoplay[aria-pressed="true"] {
+  background-image: url("../img/header/play.svg");
+}
+
+.sec-3-left-button-box > .mof-autoplay[aria-pressed="true"] {
+  background-image: url("../img/header/play-blue.svg");
+}
+
+.mof-autoplay:hover,
+.mof-autoplay:focus {
+  border-color: #005cb2;
+  background-color: #e8f2fc;
+  background-image: url("../img/header/pause-blue.svg");
+}
+
+.mof-autoplay[aria-pressed="true"]:hover,
+.mof-autoplay[aria-pressed="true"]:focus {
+  background-image: url("../img/header/play-blue.svg");
+}
+
+.main-button-box > .mof-autoplay {
+  height: 25px;
+  margin: 0;
+  border: 0;
+  background-size: auto;
+  background-image: url("../img/header/pause-white.svg");
+}
+
+.main-button-box > .mof-autoplay:hover,
+.main-button-box > .mof-autoplay:focus {
+  background-color: #333;
+  background-image: url("../img/header/pause-yellow.svg");
+}
+
+.main-button-box > .mof-autoplay[aria-pressed="true"] {
+  background-image: url("../img/header/play-white.svg");
+}
+
+.main-button-box > .mof-autoplay[aria-pressed="true"]:hover,
+.main-button-box > .mof-autoplay[aria-pressed="true"]:focus {
+  background-image: url("../img/header/play-yellow.svg");
+}
+
+.sec-5-grid > .left-button-box:has(.mof-autoplay) {
+  display: flex;
+  align-items: center;
+}
+
+/* 헤더가 채워진 높이에 맞춰 기존 팝업을 헤더 아래에서 표시합니다. */
+body > .left-popup {
+  top: var(--mof-header-height, 208px);
+  z-index: 100;
+}
+
+.left-popup .close-btn,
+.right-popup .close-btn {
+  border: 0;
+  font-family: inherit;
+  font-size: 18px;
+  cursor: pointer;
+}

@@ -1,0 +1,71 @@
+/* 원본 전체메뉴 CSS. 추가한 팝업 안에만 적용합니다. */
+.mof-sitemap {position: absolute; top: 0px; left: 0px; z-index: 100; width: 100%; height: 100%; background-color: rgb(0, 45, 94);}
+.mof-sitemap .content-box {position: relative; max-width: 1400px; width: 100%; height: 100%; margin: 0px auto;}
+.mof-sitemap .content-box .con-head {position: relative; height: 120px;}
+.mof-sitemap .content-box .con-head .logo {display: block; padding-top: 40px;}
+.mof-sitemap .content-box .con-head .logo > img {display: block; max-width: none; height: 40px;}
+.mof-sitemap .content-box .con-body {display: block; overflow: hidden auto; position: relative; height: calc(100% - 120px);}
+.mof-sitemap .content-box .con-body .sitemap-list {margin: 0px -40px; padding: 0px 4px;}
+.mof-sitemap .content-box .con-body .sitemap-list::after {content: ""; display: block; clear: both;}
+.mof-sitemap .content-box .con-body .sitemap-list > li {display: block; position: relative; float: left; width: 20%; margin-bottom: 35px; padding: 10px 40px;}
+.mof-sitemap .content-box .con-body .sitemap-list > li::before {content: ""; position: absolute; top: 0px; right: 0px; width: 1px; height: 100%; background-color: rgb(56, 82, 117);}
+.mof-sitemap .content-box .con-body .sitemap-list > li:last-child::before {display: none;}
+.mof-sitemap .content-box .con-body .sitemap-list > li > .num {display: block; margin-bottom: 10px; color: rgb(66, 212, 214); font-size: 15px; font-weight: bold;}
+.mof-sitemap .content-box .con-body .sitemap-list > li > .tit {display: block; margin-bottom: 20px; font-size: 25px; color: rgb(255, 255, 255); font-weight: bold;}
+.mof-sitemap .content-box .con-body .sitemap-list > li > .tit:focus {outline: rgb(255, 255, 255) solid 3px;}
+.mof-sitemap .content-box .con-body .sitemap-list > li > .list-sub_02 {display: block;}
+.mof-sitemap .content-box .con-body .sitemap-list > li > .list-sub_02 > li {margin-bottom: 5px;}
+.mof-sitemap .content-box .con-body .sitemap-list > li > .list-sub_02 > li > a {display: block; font-size: 17px; color: rgb(7, 179, 234);}
+.mof-sitemap .content-box .con-body .sitemap-list > li > .list-sub_02 > li > a:focus {outline: rgb(255, 255, 255) solid 3px;}
+.mof-sitemap .content-box .con-body .sitemap-list > li > .list-sub_02 > li > a.link {padding-right: 20px; background-image: url("../img/header/sitemap-link-primary.svg"); background-repeat: no-repeat; background-position: right center; background-size: 14px auto;}
+.mof-sitemap .content-box .con-body .sitemap-list > li > .list-sub_02 > li > .list-sub_03 {}
+.mof-sitemap .content-box .con-body .sitemap-list > li > .list-sub_02 > li > .list-sub_03 > li {margin-bottom: 5px;}
+.mof-sitemap .content-box .con-body .sitemap-list > li > .list-sub_02 > li > .list-sub_03 > li:first-child {padding-top: 10px;}
+.mof-sitemap .content-box .con-body .sitemap-list > li > .list-sub_02 > li > .list-sub_03 > li:last-child {margin-bottom: 30px;}
+.mof-sitemap .content-box .con-body .sitemap-list > li > .list-sub_02 > li > .list-sub_03 > li > a {display: block; position: relative; padding-left: 8px; color: rgb(131, 159, 191); font-size: 15px;}
+.mof-sitemap .content-box .con-body .sitemap-list > li > .list-sub_02 > li > .list-sub_03 > li > a::before {content: ""; position: absolute; left: 0px; top: 50%; width: 4px; height: 1px; background-color: rgb(131, 159, 191); transform: translateY(-50%);}
+.mof-sitemap .content-box .con-body .sitemap-list > li > .list-sub_02 > li > .list-sub_03 > li > a.link {padding-right: 20px; background-image: url("../img/header/sitemap-link.svg"); background-repeat: no-repeat; background-position: right center; background-size: 12px auto;}
+.mof-sitemap .content-box .con-body .sitemap-list > li > .list-sub_02 > li > .list-sub_03 > li > a:focus {outline: rgb(255, 255, 255) solid 3px;}
+.mof-sitemap .btn-sitemap-close {position: absolute; top: 40px; right: 0px;}
+.mof-sitemap .btn-sitemap-close .icon {width: 40px; height: 40px;}
+.mof-sitemap .btn-sitemap-close .icon::before,
+.mof-sitemap .btn-sitemap-close .icon::after {height: 4px; border-radius: 2px; background-color: rgb(255, 255, 255);}
+.mof-sitemap {opacity: 0; transition: opacity 0.4s;}
+.mof-sitemap.on {opacity: 1;}
+@media screen and (max-width: 1400px) {
+.mof-sitemap .content-box .con-head {padding: 0px 20px;}
+.mof-sitemap .content-box .con-body {padding: 0px 20px;}
+.mof-sitemap .btn-sitemap-close {right: 20px;}
+
+}
+@media screen and (max-width: 1024px) {
+.mof-sitemap {display: none;}
+
+}
+.mof-sitemap .btn-close {display: block; border: 0px; background-color: transparent; cursor: pointer;}
+.mof-sitemap .btn-close .icon {display: block; position: relative; width: 30px; height: 30px;}
+.mof-sitemap .btn-close .icon::before,
+.mof-sitemap .btn-close .icon::after {content: ""; position: absolute; top: 50%; left: 50%; width: 100%; height: 3px; border-radius: 1.5px; background-color: rgb(255, 255, 255);}
+.mof-sitemap .btn-close .icon::before {transform: translate(-50%, -50%) rotate(45deg);}
+.mof-sitemap .btn-close .icon::after {transform: translate(-50%, -50%) rotate(-45deg);}
+.mof-sitemap .btn-close .icon::before,
+.mof-sitemap .btn-close .icon::after {transition: transform 0.3s;}
+.mof-sitemap .btn-close:hover .icon::before {transform: translate(-50%, -50%) rotate(30deg);}
+.mof-sitemap .btn-close:hover .icon::after {transform: translate(-50%, -50%) rotate(-30deg);}
+
+.mof-sitemap { position: fixed; inset: 0; border: 0; margin: 0; padding: 0; width: 100%; max-width: none; height: 100dvh; max-height: none; overflow: hidden; font-size: 18px; line-height: 26px; }
+.mof-sitemap::backdrop { background: #002d5e; }
+.mof-sitemap[open] { display: block; opacity: 1; }
+.mof-sitemap .content-box .con-head .logo > img { width: auto; object-fit: contain; }
+.mof-sitemap .btn-close { padding: 0; }
+.mof-sitemap a { text-decoration: none; }
+.mof-sitemap :focus-visible { border-radius: 0; outline-offset: 0; }
+@media (max-width: 700px) {
+.mof-sitemap .content-box { width: calc(100% - 32px); }
+.mof-sitemap .content-box .con-head { height: 90px; }
+.mof-sitemap .content-box .con-head .logo { padding-top: 24px; }
+.mof-sitemap .content-box .con-body { height: calc(100% - 90px); }
+.mof-sitemap .content-box .con-body .sitemap-list { margin: 0; padding: 0; }
+.mof-sitemap .content-box .con-body .sitemap-list > li { width: 100%; padding: 10px 8px; }
+.mof-sitemap .btn-close { top: 29px; right: 0; }
+}
